@@ -31,10 +31,10 @@
         android:layout_alignStart="@+id/textView" />
 
     <TextView
-        android:text="Enter a number of mintues"
+        android:text="Enter number of minutes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        android:id="@+id/textViewMinRep"
         android:layout_below="@+id/spinner"
         android:layout_alignLeft="@+id/spinner"
         android:layout_alignStart="@+id/spinner" />
@@ -44,21 +44,32 @@
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:layout_below="@+id/textView3"
-        android:layout_alignLeft="@+id/textView3"
-        android:layout_alignStart="@+id/textView3"
-        android:id="@+id/editText3" />
+        android:id="@+id/textViewAmount"
+        android:layout_below="@+id/textViewMinRep"
+        android:layout_alignLeft="@+id/textViewMinRep"
+        android:layout_alignStart="@+id/textViewMinRep"
+        android:textSize="18sp" />
 
     <Button
         android:text="Calculate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText3"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="13dp"
         android:id="@+id/button"
         style="@style/Widget.AppCompat.Button.Colored"
-        android:elevation="0dp" />
+        android:elevation="0dp"
+        android:layout_below="@+id/textViewAmount"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewCaloriesBurned"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textViewAmount"
+        android:layout_alignStart="@+id/textViewAmount" />
 
 </RelativeLayout>
